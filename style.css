@@ -80,6 +80,7 @@ body{
 .header_area{
 	padding: 25px 0;
 }
+.header_lg_block {background: #9a35ff55;}
 .main_menu ul {
     padding: 0;
     margin: 0;
