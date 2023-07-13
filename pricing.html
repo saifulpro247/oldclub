@@ -27,7 +27,8 @@
 				<div class="col-md-9 col-sm-6 col-6">
 					<div class="main_menu">
 						<ul class="mobile_hide">
-							<li class="location">New York</li>
+							<button onclick="showLocation()">Get Location</button>
+							<li class="location" id="location"></li>
 							<li><a href="how-works.html">How it works</a></li>
 							<li><a href="feature.html">Features</a></li>
 							<li><a href="pricing.html">Pricing</a></li>
@@ -53,7 +54,7 @@
 					<li><a href="how-works.html">How it works</a></li>
 					<li><a href="feature.html">Features</a></li>
 					<li><a href="pricing.html">Pricing</a></li>
-					<li><a href="#">Resources</a>
+					<li><a href="#" class="has-submenu"">Resources <span>+</span></a>
 						<ul class="sub-menu">
 							<li><a href="service.html">Services</a></li>
 							<li><a href="faq.html">FAQs</a></li>
@@ -76,11 +77,11 @@
 						<nav aria-label="breadcrumb">
 							<ul class="breadcrumb breadcrumb-list">
 								<li class="breadcrumb-item"><a href="index.html">Home</a></li>
-								<li class="breadcrumb-item active" aria-current="page">Contact us</li>
+								<li class="breadcrumb-item active" aria-current="page">Princing</li>
 							</ul>
 						</nav>
 						<div class="breadcrumb-sec">
-							<h1 class="breadcrumb-title">Contact us</h1>
+							<h1 class="breadcrumb-title">Pricing</h1>
 						</div>
 					</div>
 				</div>
@@ -119,7 +120,7 @@
 											<div class="pricing-card-title">
 												<h2>Starter</h2>
 											</div>
-											<p>Create your first call for free</p>
+											<p>Basic Usages</p>
 											<h3>$12.50 <span>/month</span></h3>
 										</div>
 										<div class="pricing-card-body">
@@ -190,18 +191,18 @@
 									<div class="pricing-card">
 										<div class="pricing-card-header">
 											<div class="pricing-card-title">
-												<h2>Free</h2>
+												<h2>Starter</h2>
 											</div>
-											<p>Create your first call for free</p>
-											<h3>$0 <span>/year</span></h3>
+											<p>Basic Usages</p>
+											<h3>$150.00 <span>/month</span></h3>
 										</div>
 										<div class="pricing-card-body">
 											<ul class="pricing-card-list">
-												<li>Unlimited meeting</li>
-												<li>Up to 100 Attendees</li>
-												<li>40 minute limit</li>
-												<li>3 whiteboards</li>
-												<li>Group chat &amp; file sharing</li>
+												<li>Incoming Mail</li>
+												<li>30 Items</li>
+												<li>Open & Scan <sub>*</sub></li>
+												<li>O items</li>
+												<li>Recipients- 1</li>
 											</ul>
 											<button class="pricing-btn">
 												<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" width="1em" height="1em" viewBox="0 0 24 24" data-icon="akar-icons:arrow-right" class="iconify iconify--akar-icons"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 12h16m-7-7l7 7l-7 7"></path></svg>
@@ -213,18 +214,18 @@
 									<div class="pricing-card">
 										<div class="pricing-card-header">
 											<div class="pricing-card-title">
-												<h2>Meeting</h2>
+												<h2>Standard</h2>
 											</div>
-											<p>Team in a growing company</p>
-											<h3>$108 <span>/year</span></h3>
+											<p>Standard</p>
+											<h3>$222.00 <span>/month</span></h3>
 										</div>
 										<div class="pricing-card-body">
 											<ul class="pricing-card-list">
-												<li>Unlimited meeting</li>
-												<li>Up to 100 Attendees</li>
-												<li>40 minute limit</li>
-												<li>3 whiteboards</li>
-												<li>Group chat &amp; file sharing</li>
+												<li>Incoming Mail</li>
+												<li>60 Items</li>
+												<li>Open & Scan <sub>*</sub></li>
+												<li>1O items</li>
+												<li>Recipients- 2</li>
 											</ul>
 											<button class="pricing-btn">
 												<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" width="1em" height="1em" viewBox="0 0 24 24" data-icon="akar-icons:arrow-right" class="iconify iconify--akar-icons"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 12h16m-7-7l7 7l-7 7"></path></svg>
@@ -236,18 +237,18 @@
 									<div class="pricing-card">
 										<div class="pricing-card-header">
 											<div class="pricing-card-title">
-												<h2>Business</h2>
+												<h2>Premium</h2>
 											</div>
-											<p>Big company choose this</p>
-											<h3>$300 <span>/year</span></h3>
+											<p>Full Package</p>
+											<h3>$306.00 <span>/month</span></h3>
 										</div>
 										<div class="pricing-card-body">
 											<ul class="pricing-card-list">
-												<li>Unlimited meeting</li>
-												<li>Up to 100 Attendees</li>
-												<li>40 minute limit</li>
-												<li>3 whiteboards</li>
-												<li>Group chat &amp; file sharing</li>
+												<li>Incoming Mail</li>
+												<li>120 Items</li>
+												<li>Open & Scan <sub>*</sub></li>
+												<li>20 items</li>
+												<li>Recipients- 6</li>
 											</ul>
 											<button class="pricing-btn">
 												<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" width="1em" height="1em" viewBox="0 0 24 24" data-icon="akar-icons:arrow-right" class="iconify iconify--akar-icons"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 12h16m-7-7l7 7l-7 7"></path></svg>
@@ -259,77 +260,23 @@
 						</div>
 					</div>
 				</div>
+			</div>
+			<div class="aditional_information">
+				<li><span>*</span>Physical Mail address (New York City)</li>
+				<li><span>*</span>Plans included from standard & Premium Packages
+					<ul>
+						<li>247 online access to your email item</li>
+						<li>247 online access to your email item</li>
+						<li>247 online access to your email item</li>
+						<li>247 online access to your email item</li>
+						<li>247 online access to your email item</li>
+						<li>247 online access to your email item</li>
+					</ul>
+				</li>
 			</div>
 		</div>
 	</section>
 	<!-- pricing table end -->
-
-	<!-- client testimonial -->
-	<section class="client_testimonial section_padding" style="background-image: url(assets/img/footer_slider-bg.png);">
-		<div class="container">
-			<div class="row">
-				<div class="section_title title_margin text-center">
-					<h3>Client testimonial</h3>
-					<p>Lorem ipsum dolor sit amet.</p>
-				</div>
-			</div>
-			<div class="row justify-content-center">
-				<div class="col-lg-8">
-					<div class="client_testimonial_area owl-carousel">
-
-						<div class="single_testimonial ">
-							<div class="client_info">
-								<div class="client_image">
-									<img src="assets/img/client.png" alt="">	
-								</div>
-								<div class="client_meta">
-									<div class="rating_star">
-										<ul>
-											<li><i class="bi bi-star-fill"></i></li>
-											<li><i class="bi bi-star-fill"></i></li>
-											<li><i class="bi bi-star-fill"></i></li>
-											<li><i class="bi bi-star-fill"></i></li>
-											<li><i class="bi bi-star-fill"></i></li>
-										</ul>
-									</div>
-									<h5>Willians Jhone</h5>
-									<p>Ceo & Co-Founder</p>
-								</div>
-							</div>
-							<div class="client_review_text">
-								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non provident veritatis vitae, alias quae et porro nemo eius commodi deserunt qui architecto est atque amet mollitia eveniet facilis autem! Atque!</p>
-							</div>
-						</div>
-						<div class="single_testimonial ">
-							<div class="client_info">
-								<div class="client_image">
-									<img src="assets/img/client.png" alt="">	
-								</div>
-								<div class="client_meta">
-									<div class="rating_star">
-										<ul>
-											<li><i class="bi bi-star-fill"></i></li>
-											<li><i class="bi bi-star-fill"></i></li>
-											<li><i class="bi bi-star-fill"></i></li>
-											<li><i class="bi bi-star-fill"></i></li>
-											<li><i class="bi bi-star-fill"></i></li>
-										</ul>
-									</div>
-									<h5>Willians Jhone</h5>
-									<p>Ceo & Co-Founder</p>
-								</div>
-							</div>
-							<div class="client_review_text">
-								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non provident veritatis vitae, alias quae et porro nemo eius commodi deserunt qui architecto est atque amet mollitia eveniet facilis autem! Atque!</p>
-							</div>
-						</div>
-
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-	<!-- client testimonial end -->
 
 	<!-- footer -->
 	<footer class="site_footer footer_bg section_padding">

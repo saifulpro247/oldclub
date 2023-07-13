@@ -28,7 +28,9 @@ img{
 	--body-font-size: 16px;
 	--body-bg: #fff;
 }
-
+.rtl{
+  flex-direction: row-reverse;
+}
 body{
 	font-family: var(--main-font);
 	color: 	var(--secondary-color);
@@ -162,6 +164,13 @@ body{
 }
 .mobile_menus ul li ul.sub-menu {
     padding-left: 30px;
+    display: none;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+.mobile_menus ul li .sub-menu.open {
+  display: block;
+  opacity: 1;
 }
 /* sub menus */
 .main_menu ul li {
@@ -762,6 +771,66 @@ body{
 	-webkit-transform: rotate(-45deg);
 			transform: rotate(-45deg);
   }
-  
-  
-  /*-- compare-price-section End --*/
+  .aditional_information li {
+    list-style: none;
+    position: relative;
+  }
+  .aditional_information li:not(:last-child) {
+    margin-bottom: 10px;
+  } 
+
+  .aditional_information li span {
+    color: var(--btn-bg);
+    font-size: 20px;
+    margin-right: 5px;
+  }
+  .aditional_information li:not(:last-child) {
+    margin-bottom: 10px;
+  }
+  .aditional_information li ul {
+    margin-top: 10px;
+    padding-left: 45px;
+  }
+  .aditional_information li ul li {
+    position: relative;
+  }
+  ul {
+  }
+  .aditional_information li ul li:before {
+    position: absolute;
+    left: -20px;
+    content: '-';
+    font-weight: 700;
+    color: var(--btn-bg);
+  }
+
+  /* feature area css */
+  .features_area .container {
+    box-shadow: 3px 3px 4px 3px #333;
+    box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.05), 0px 6px 13px 0px rgba(0, 0, 0, 0.05), 0px 24px 24px 0px rgba(0, 0, 0, 0.04), 0px 54px 33px 0px rgba(0, 0, 0, 0.03), 0px 97px 39px 0px rgba(0, 0, 0, 0.01), 0px 151px 42px 0px rgba(0, 0, 0, 0.00);
+    padding: 50px;
+    border-radius: 16px;
+  }
+  .feature_description {
+    color: var(--neutral-color);
+    line-height: 1.7;
+  }
+  .feature_description h3 {
+    font-size: 24px;
+    font-weight: 500;
+    margin-bottom: 10px;
+    color: var(--primary-color);
+  }
+.feature_title img {
+  max-width: 100px;
+  height: 100px;
+  object-fit: cover;
+}
+.feature_text {
+  display: flex;
+  gap: 20px;
+}
+.feature_title {
+  display: flex;
+  align-items: center;
+}
