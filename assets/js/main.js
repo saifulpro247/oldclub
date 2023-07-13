@@ -13,21 +13,46 @@
     });
     
     // Initial check on page load
-    var screenWidth = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
-    var button = document.getElementById('myButton'); // Replace 'myButton' with the actual ID of your button
-    
-    if (screenWidth <= 767) {
-      button.disabled = false;
-    } else {
-      button.disabled = true;
-    }
-    
+        var screenWidth = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
+        var button = document.getElementById('myButton'); // Replace 'myButton' with the actual ID of your button
+        
+        if (screenWidth <= 767) {
+          button.disabled = false;
+        } else {
+          button.disabled = true;
+        }
     // mobile menu
-
     $('.menu_humberger').on('click', function(){
         $('.mobile_menus').toggleClass('d-block');
     })
 
+    
+    /*-- pricing selector scripts start --*/
+    var pricingSelector = $(".pricing-selector");
+    if (pricingSelector.length) {
+        $(".pricing-monthly-btn").on("click", function () {
+            $("#pricing-selector").prop("checked", false);
+            $(".pricing-monthly").css("display", "block");
+            $(".pricing-yearly").css("display", "none");
+        });
+
+        $(".pricing-yearly-btn").on("click", function () {
+            $("#pricing-selector").prop("checked", true);
+            $(".pricing-monthly").css("display", "none");
+            $(".pricing-yearly").css("display", "block");
+        });
+
+        $("#pricing-selector").on("change", function () {
+            if (this.checked) {
+                $(".pricing-monthly").css("display", "none");
+                $(".pricing-yearly").css("display", "block");
+            } else {
+                $(".pricing-monthly").css("display", "block");
+                $(".pricing-yearly").css("display", "none");
+            }
+        });
+    }
+    /*-- pricing selector scripts end --*/
    
     
   
