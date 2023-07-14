@@ -34,7 +34,7 @@
         function toggleSubMenu() {
           var subMenu = this.nextElementSibling;
           subMenu.classList.toggle("open");
-      }
+        }
 
       // Attach event listeners to menu items with sub-menu
       var menuItems = document.getElementsByClassName("has-submenu");

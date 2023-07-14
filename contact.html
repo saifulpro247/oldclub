@@ -11,6 +11,7 @@
 	<link rel="stylesheet" href="assets/css/owl.carousel.min.css">
 	<link rel="stylesheet" href="assets/css/owl.theme.default.css">
 	<link rel="https://cdnjs.cloudflare.com/ajax/libs/SlickNav/1.0.10/slicknav.min.css" />
+
 	<link rel="stylesheet" href="style.css">
 	<link rel="stylesheet" href="assets/css/responsive.css">
 	<script src="assets/js/modernizr-3.12.0.min.js"></script>
@@ -27,8 +28,7 @@
 				<div class="col-md-9 col-sm-6 col-6">
 					<div class="main_menu">
 						<ul class="mobile_hide">
-							<button onclick="showLocation()">Get Location</button>
-							<li class="location" id="location"></li>
+							<li class="location">New York</li>
 							<li><a href="how-works.html">How it works</a></li>
 							<li><a href="feature.html">Features</a></li>
 							<li><a href="pricing.html">Pricing</a></li>
@@ -40,10 +40,13 @@
 									<li><a href="security.html">Security</a></li>
 								</ul>
 							</li>
-							<li><a href="#">sign in</a></li>
+							
+							<li><a href="#" data-bs-toggle="modal" data-bs-target="#login-modal">sign in</a></li>
+						</ul>
 						</ul>
 						<div class="expanded_menu sm">
 							<button class="menu_humberger" id="myButton"><i class="bi bi-list"></i></button>
+							
 						</div>
 					</div>
 				</div>
@@ -54,7 +57,7 @@
 					<li><a href="how-works.html">How it works</a></li>
 					<li><a href="feature.html">Features</a></li>
 					<li><a href="pricing.html">Pricing</a></li>
-					<li><a href="#" class="has-submenu"">Resources <span>+</span></a>
+					<li><a href="#">Resources</a>
 						<ul class="sub-menu">
 							<li><a href="service.html">Services</a></li>
 							<li><a href="faq.html">FAQs</a></li>
@@ -62,12 +65,13 @@
 							<li><a href="security.html">Security</a></li>
 						</ul>
 					</li>
-					<li><a href="#">sign in</a></li>
-				</ul>
+					<li><a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal">sign in</a></li>
+					</ul>
 			</div>
+			
 		</div>
 	</header>
-	<!-- header area end -->
+	<!-- hero area -->
 	<!-- breadcrumb section -->
 	<section class="breadcrumb-section">
 		<div class="container">
@@ -95,7 +99,7 @@
 		<div class="container">
 			<div class="row items-gap align-items-center">
 				<div class="col-12 col-lg-6 col-xxl-5">
-					<div class="contact-main__content wow fadeInUp" data-wow-duration="600ms" data-wow-delay="300ms" style="visibility: visible; animation-duration: 600ms; animation-delay: 300ms; animation-name: fadeInUp;">
+					<div class="contact-main__content wow fadeInUp">
 						<h2 class="h3">
 							Have something in mind?
 							<span>Let's talk.</span>
@@ -104,17 +108,14 @@
 							Adipiscing elit, sed do eiusmod tempor incididunt ut labore et
 		  dolore magna aliqua. Ut enim ad minim.
 						</p>
-						<div class="arrow">
-							<img src="assets/images/arrow-contact.png" alt="Image">
-						</div>
-						<div class="cta-contact">
-							<a href="tel:223-087-9756">
+						<div class="cta-contact mt-4">
+							<a href="tel:01755202096">
 								Schedule a call
 								<i class="fa-solid fa-angle-right">
 								</i>
 							</a>
 							<span>OR</span>
-							<a href="mailto:support@techai.com">
+							<a href="mailto:asifur94@outlook.com">
 								Request a feature
 								<i class="fa-solid fa-angle-right">
 								</i>
@@ -123,28 +124,19 @@
 					</div>
 				</div>
 				<div class="col-12 col-lg-6 col-xxl-6 offset-xxl-1">
-					<div class="contact-main__form wow fadeInUp" data-wow-duration="600ms" data-wow-delay="300ms" style="visibility: visible; animation-duration: 600ms; animation-delay: 300ms; animation-name: fadeInUp;">
+					<div class="contact-main__form wow fadeInUp">
 						<form action="#" method="post">
-							<div class="group-input wow fadeInUp" data-wow-duration="600ms" data-wow-delay="600ms" style="visibility: visible; animation-duration: 600ms; animation-delay: 600ms; animation-name: fadeInUp;">
+							<div class="group-input wow fadeInUp">
 								<input type="text" name="contact-name" id="contactName" placeholder="enter full name">
 							</div>
-							<div class="group-input wow fadeInUp" data-wow-duration="600ms" data-wow-delay="900ms" style="visibility: visible; animation-duration: 600ms; animation-delay: 900ms; animation-name: fadeInUp;">
+							<div class="group-input wow fadeInUp" >
 								<input type="email" name="contact-email" id="contactEmail" placeholder="enter Your Email">
 							</div>
-							<div class="group-input wow fadeInUp" data-wow-duration="600ms" data-wow-delay="1200ms" style="visibility: visible; animation-duration: 600ms; animation-delay: 1200ms; animation-name: fadeInUp;">
-								<select class="subject" style="display: none;">
-									<option data-display="Select Subject">
-										Select Subject
-									</option>
-									<option value="1">Account</option>
-									<option value="2">Service</option>
-									<option value="3">Pricing</option>
-									<option value="4">Support</option>
-								</select><div class="nice-select subject" tabindex="0"><span class="current">Account</span><ul class="list"><li data-value="Select Subject" data-display="Select Subject" class="option focus">
-										Select Subject
-									</li><li data-value="1" class="option selected">Account</li><li data-value="2" class="option">Service</li><li data-value="3" class="option">Pricing</li><li data-value="4" class="option">Support</li></ul></div>
+							<div class="group-input wow fadeInUp" >
+								<input type="text" name="contact-email" id="contactEmail" placeholder="enter Your Subject">
 							</div>
-							<div class="group-input wow fadeInUp" data-wow-duration="600ms" data-wow-delay="1500ms" style="visibility: visible; animation-duration: 600ms; animation-delay: 1500ms; animation-name: fadeInUp;">
+							
+							<div class="group-input wow fadeInUp">
 								<textarea name="contact-message" id="contactMessage" placeholder="Write a message"></textarea>
 							</div>
 							<div class="group-radio">
@@ -153,10 +145,9 @@
 									I accept your terms &amp; conditions
 								</label>
 							</div>
-							<div class="form-cta justify-content-start">
-								<button type="submit" class="btn btn--nonary">
+							<div class="form-cta d-flex justify-content-start">
+								<button type="submit" class="site_btn mt-5">
 									Send Message
-									<i class="fa-solid fa-paper-plane"></i>
 								</button>
 							</div>
 						</form>
@@ -173,8 +164,7 @@
 			<div class="row">
 				<div class="col-md-6 col-lg-3 mb-4">
 					 <div class="single_widget">
-						<div class="footer_logo"><a href="index.html"><img src="assets/img/LOGO.png" alt=""></a>
-						</div>
+						<a href="index.html"><img src="assets/img/LOGO.png" alt=""><h4>OLD CLUB MAN</h4></a>
 						<p class="mb-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam alias necessitatibus beatae vel reprehenderit nostrum obcaecati est quo? Officiis, magni. </p>
 						<div class="footer_social">
 							<ul>
@@ -229,6 +219,81 @@
 	</footer>
 	<!-- footer end -->
 
+
+	<!-- modal -->
+	 <div class="header-login-register-wrapper modal fade" id="login-modal" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-box-wrapper">
+                    <div class="helendo-tabs">
+                        <ul class="nav" role="tablist">
+                            <li class="tab__item nav-item active" role="presentation">
+                                <a class="nav-link active" data-bs-toggle="tab" href="#tab_list_06" role="tab" aria-selected="true">Login</a>
+                            </li>
+                            <li class="tab__item nav-item" role="presentation">
+                                <a class="nav-link" data-bs-toggle="tab" href="#tab_list_07" role="tab" aria-selected="false" tabindex="-1">Our Register</a>
+                            </li>
+
+                        </ul>
+                    </div>
+                    <div class="tab-content content-modal-box">
+                        <div class="tab-pane fade show active" id="tab_list_06" role="tabpanel">
+                            <form action="#" class="account-form-box">
+                                <h6>Login your account</h6>
+                                <div class="single-input">
+                                    <input type="text" placeholder="Username">
+                                </div>
+                                <div class="single-input">
+                                    <input type="password" placeholder="Password">
+                                </div>
+                                <div class="checkbox-wrap mt-10">
+                                    <label class="label-for-checkbox inline mt-15">
+                                        <input class="input-checkbox" name="rememberme" type="checkbox" id="rememberme" value="forever"> <span>Remember me</span>
+                                    </label>
+                                    <a href="#" class=" mt-10">Lost your password?</a>
+                                </div>
+                                <div class="button-box mt-25">
+                                    <a href="#" class="site_btn">Log in</a>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="tab-pane fade" id="tab_list_07" role="tabpanel">
+
+                            <form action="#" class="account-form-box">
+                                <h6>Register An Account</h6>
+                                <div class="single-input">
+                                    <input type="text" placeholder="First Name">
+                                </div>
+								<div class="single-input">
+                                    <input type="text" placeholder="Middle Name">
+                                </div>
+								<div class="single-input">
+                                    <input type="text" placeholder="Last Name">
+                                </div>
+								<div class="single-input">
+                                    <input type="date" placeholder="Date of Birth">
+                                </div>
+                                <div class="single-input">
+                                    <input type="text" placeholder="Email address">
+                                </div>
+                                <div class="single-input">
+                                    <input type="phone" placeholder="Phone Number (with country Code)">
+                                </div>
+                                <div class="single-input">
+                                    <input type="password" placeholder="Password">
+                                </div>
+                                <div class="button-box mt-4">
+                                    <a href="#" class="site_btn">Sign Up</a>
+                                </div>
+                            </form>
+                        </div>
+						
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+	<!-- modal end -->
 	<!-- all javascript here -->
 	<script src="assets/js/Jquery-3.7.0.js"></script>
 	<script src="assets/js/owl.carousel.min.js"></script>
