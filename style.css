@@ -1094,3 +1094,70 @@ body{
 	width: 100%;
   border-radius: 0;
 }
+
+/* service details css */
+.service_details img {
+  width: 200px;
+  height: auto;
+  margin-bottom: 20px;
+}
+.service_details h2 {
+  font-size: 26px;
+  font-weight: 500;
+  color: var(--primary-color);
+  margin-bottom: 20px;
+}
+.service_details p span {
+  font-weight: 700;
+  display: flex;
+  flex-direction: column;
+}
+
+/* bulk sms page */
+.bulk_sms_content h2 {
+  font-size: 50px;
+  font-weight: 700;
+  color: var(--primary-color);
+  margin-bottom: 20px;
+}
+.bg-dark-100 {
+  background-color: rgb(0 0 0 / 2%);
+}
+.api_content h4 {
+  font-size: 24px;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+
+.api_content ul li {
+  list-style: square;
+  margin-bottom: 20px;
+}
+.customer_options {
+  padding: 50px;
+  border: 1px solid #fdfd;
+  border-radius: 10px;
+}
+
+.customer_icon img {
+  width: 100px;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+.customer_options_meta h4 {
+  font-size: 25px;
+  text-transform: capitalize;
+  margin-bottom: 10px;
+}
+
+.customer_options_meta p {
+  margin: 0;
+  font-size: 18px;
+}
+.bulk-sms-pricing-plan::before {
+  background: #ffffff;
+}
+.bulk-sms-pricing-plan{
+  position: relative;
+}
