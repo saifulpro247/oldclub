@@ -91,7 +91,7 @@ body{
 .header_area{
 	padding: 25px 0;
 }
-.header_lg_block {background: #9a35ff1a; z-index: 1;}
+.header_lg_block {background: var(--btn-bg); z-index: 1;}
 .site_logo a, .single_widget a {
   display: flex;
   align-items: center;
@@ -122,7 +122,7 @@ body{
     transition: all .3s;
 }
 .main_menu ul li:hover a {
-    color: var(--btn-bg);
+    color: var(--bs-primary-bg-subtle);
 }
 .main_menu {
     display: flex;
@@ -142,7 +142,7 @@ body{
 	color: var(--btn-bg);
 }
 .main_menu .expanded_menu button:hover{
-	background-color: var(--btn-bg);
+	background-color: var(--neutral-color);
 	color: var(--body-bg);
 }
 .main_menu .expanded_menu button:hover i{
@@ -297,7 +297,7 @@ body{
     border: 1px solid var(--btn-bg);
     width: calc(100%/5);
     border-radius: 15px;
-    box-shdow: var(--box-shadow);: 0px 0px 0px 0px rgba(0, 0, 0, 0.05), 0px 6px 13px 0px rgba(0, 0, 0, 0.05), 0px 24px 24px 0px rgba(0, 0, 0, 0.04), 0px 54px 33px 0px rgba(0, 0, 0, 0.03), 0px 97px 39px 0px rgba(0, 0, 0, 0.01), 0px 151px 42px 0px rgba(0, 0, 0, 0.00);
+    box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.05), 0px 6px 13px 0px rgba(0, 0, 0, 0.05), 0px 24px 24px 0px rgba(0, 0, 0, 0.04), 0px 54px 33px 0px rgba(0, 0, 0, 0.03), 0px 97px 39px 0px rgba(0, 0, 0, 0.01), 0px 151px 42px 0px rgba(0, 0, 0, 0.00);
     background-color: var(--body-bg);
 	width: 100%;
 }
@@ -353,7 +353,7 @@ body{
 .client_testimonial_area {
     border-radius: 35px;
     background: var(--body-bg);
-    box-shdow: var(--box-shadow);: 0px 0px 50px 0px rgba(86, 55, 160, 0.25);
+    box-shadow: var(--box-shadow);
 }
 
 .single_testimonial .client_info {
@@ -820,6 +820,12 @@ body{
     color: var(--btn-bg);
   }
 
+  .tab_content{
+    display: none;
+  }
+  .tab_content.active{
+    display: block;
+  }
   /* feature area css */
   .features_area .container {
     box-shadow: 3px 3px 4px 3px #333;

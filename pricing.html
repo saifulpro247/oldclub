@@ -23,10 +23,10 @@
 	<header class="header_area header_transparent header_lg_block">
 		<div class="container">
 			<div class="row d-flex align-items-center">
-				<div class="col-md-3 col-sm-6 col-6">
+				<div class="col-md-4 col-sm-6 col-6">
 					<div class="site_logo"><a href="index.html"><img src="assets/img/LOGO.png" alt=""><h4>OLD CLUB MAN</h4></a></div>
 				</div>
-				<div class="col-md-9 col-sm-6 col-6">
+				<div class="col-md-8 col-sm-6 col-6">
 					<div class="main_menu">
 						<ul class="mobile_hide">
 							<li class="location">New York</li>
@@ -94,13 +94,14 @@
 		</div>
 	</section>
 	<!-- breadcrumb section end -->
+
 	<!-- service tab -->
 	<section class="service_tab section_padding">
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-4 mb-4">
 					<div class="service_box p-5">
-						<a class="single_service_box tab-button active" onclick="openTab(event, 'tab1')" href="#">
+						<a data-tab="mailbox" class="single_service_box" href="#mailbox">
 							<img src="assets/img/mailbox.png" alt="">
 							<a href="#">Mail Box</a>
 							<p>US Physicals Business Address & Mail Box to Your Email Inbox.</p>
@@ -109,7 +110,7 @@
 				</div>
 				<div class="col-lg-4 mb-4">
 					<div class="service_box p-5">
-						<a class="single_service_box tab-button" onclick="openTab(event, 'tab2')" href="#">
+						<a data-tab="bulksms"  class="single_service_box"  href="#business">
 							<img src="assets/img/registered.png" alt="">
 							<a href="#">Register Business</a>
 							<p>US Physicals Business Address & Mail Box to Your Email Inbox.</p>
@@ -118,13 +119,14 @@
 				</div>
 				<div class="col-lg-4 mb-4">
 					<div class="service_box p-5">
-						<a class="single_service_box tab-button" onclick="openTab(event, 'tab3')" href="#">
+						<a data-tab="bulksms" class="single_service_box"  href="#bulksms">
 							<img src="assets/img/chatting.png" alt="">
 							<a href="#">Bulk Sms</a>
 							<p>US Physicals Business Address & Mail Box to Your Email Inbox.</p>
 						</a>
 					</div>
 				</div>
+
 			</div>
 		</div>
 	</section>
@@ -132,8 +134,7 @@
 
 
 
-	<!-- pricing table -->
-	<section class="pricing-section pricing_plan tab-content" id="tab1" style="display: block;">
+	<section class="pricing-section pricing_plan tab_content active" data-tab="mailbox">
 		<div class="container">
 			<div class="row">
 				<div class="col-md-6">
@@ -319,9 +320,8 @@
 			</div> -->
 		</div>
 	</section>
-	<!-- pricing table end -->
-	<!-- pricing table -->
-	<section class="pricing-section pricing_plan tab-content" id="tab2">
+
+	<section class="pricing-section pricing_plan tab_content" data-tab="business">
 		<div class="container">
 			<div class="row">
 				<div class="col-md-6">
@@ -507,9 +507,8 @@
 			</div> -->
 		</div>
 	</section>
-	<!-- pricing table end -->
-	<!-- pricing table -->
-	<section class="pricing-section pricing_plan tab-content" id="tab3">
+
+	<section class="pricing-section pricing_plan tab_content" data-tab="bulksms">
 		<div class="container">
 			<div class="row">
 				<div class="col-md-6">
@@ -695,7 +694,7 @@
 			</div> -->
 		</div>
 	</section>
-	<!-- pricing table end -->
+
 
 	<!-- footer -->
 	<footer class="site_footer footer_bg section_padding">
@@ -841,22 +840,40 @@
 
 	<script src="assets/js/main.js"></script>
 	<script>
-		function openTab(event, tabName) {
-		  var i, tabContent, tabButton;
-		
-		  tabContent = document.getElementsByClassName("tab-content");
-		  for (i = 0; i < tabContent.length; i++) {
-			tabContent[i].style.display = "none";
-		  }
-		
-		  tabButton = document.getElementsByClassName("tab-button");
-		  for (i = 0; i < tabButton.length; i++) {
-			tabButton[i].className = tabButton[i].className.replace(" active", "");
-		  }
-		
-		  document.getElementById(tabName).style.display = "block";
-		  event.currentTarget.className += " active";
-		}
-		</script>
+		     // JavaScript code for the tab plugin
+			 document.addEventListener("DOMContentLoaded", function () {
+          const tabButtons = document.querySelectorAll(".service_box");
+          const tabContents = document.querySelectorAll(".tab_content");
+
+          function showTab(tab) {
+            tabContents.forEach(function (content) {
+              if (content.dataset.tab === tab) {
+                content.classList.add("active");
+              } else {
+                content.classList.remove("active");
+              }
+            });
+
+            tabButtons.forEach(function (button) {
+              if (button.dataset.tab === tab) {
+                button.classList.add("active");
+              } else {
+                button.classList.remove("active");
+              }
+            });
+          }
+
+          tabButtons.forEach(function (button) {
+            button.addEventListener("click", function () {
+              const tab = this.dataset.tab;
+              showTab(tab);
+            });
+          });
+
+          // Show the first tab by default
+          showTab(tabButtons[0].dataset.tab);
+        });
+	</script>
+
 </body>
 </html>

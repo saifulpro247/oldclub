@@ -25,6 +25,7 @@
 	.service_types {grid-template-columns: repeat(2, 1fr);gap: 30px;}
 	.client_testimonial {background-size: 130%;}
 	.hero_bg {background-size: 0%;}
+	.main_menu ul {display: none;}
 
 }
 

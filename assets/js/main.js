@@ -8,7 +8,7 @@
             document.body.clientWidth;
           var button = document.getElementById("myButton"); // Replace 'myButton' with the actual ID of your button
 
-          if (screenWidth <= 767) {
+          if (screenWidth <= 991) {
             button.disabled = false;
           } else {
             button.disabled = true;
@@ -68,6 +68,12 @@
           });
         }
 
+        // pricing table tab
+
+  
+
+
+        // client testimonial
         $(".client_testimonial_area").owlCarousel({
           items: 1,
           loop: true,
