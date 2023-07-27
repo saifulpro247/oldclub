@@ -91,7 +91,7 @@ body{
 .header_area{
 	padding: 25px 0;
 }
-.header_lg_block {background: var(--btn-bg); z-index: 1;}
+.header_lg_block {background: #ffffffb5; z-index: 1;}
 .site_logo a, .single_widget a {
   display: flex;
   align-items: center;
@@ -116,13 +116,13 @@ body{
 }
 .main_menu ul li a {
     display: block;
-    color: var(--body-bg);
+    color: var(--secondary-color);
     font-weight: 500;
     letter-spacing: 1px;
     transition: all .3s;
 }
 .main_menu ul li:hover a {
-    color: var(--bs-primary-bg-subtle);
+    color: #000;
 }
 .main_menu {
     display: flex;
@@ -191,7 +191,7 @@ body{
 /* sub menus */
 .main_menu ul li {
 	position: relative;
-	color: var(--body-bg);
+	color: var(--secondary-color);
 }
 .main_menu ul li ul.sub-menu {
     position: absolute;
