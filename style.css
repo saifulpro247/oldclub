@@ -105,7 +105,7 @@ body{
 }
 .site_logo a img, .single_widget a img {
   max-width: 100%;
-  height: 60px;
+  height: 80px;
 }
 .main_menu ul {
     padding: 0;
@@ -323,6 +323,12 @@ body{
 .service_box {
     text-align: center;
     cursor: pointer;
+    transition: .3s;
+    overflow: hidden;
+}
+.service_box:hover {
+	transform: scale(1.15);
+  filter: contrast(1.5);
 }
 .single_micro_service h3 {
     font-size: 50px;
@@ -420,7 +426,7 @@ body{
 
 /* footer css */
 .footer_bg {
-    background-color: var(--btn-bg);
+    background-color: rgba(0, 0, 0, 0.89);
 }
 
 .single_widget a {
@@ -489,7 +495,7 @@ body{
 
 /* breadcrumb page */
 .breadcrumb-section {
-    /* margin-top: 90px; */
+    margin-top: 90px;
     padding: 150px 0 100px 0;
     background-color: #242549;
     position: relative;
@@ -669,7 +675,7 @@ body{
   /*-- pricing-card style --*/
   .pricing-card {
 	margin-bottom: 40px;
-	border-radius: 30px;
+	border-radius: 10px;
 	background-color: var(--body-bg);
 	padding: 40px;
 	box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.05), 0px 6px 13px 0px rgba(0, 0, 0, 0.05), 0px 24px 24px 0px rgba(0, 0, 0, 0.04), 0px 54px 33px 0px rgba(0, 0, 0, 0.03), 0px 97px 39px 0px rgba(0, 0, 0, 0.01), 0px 151px 42px 0px rgba(0, 0, 0, 0.00);
@@ -1229,4 +1235,89 @@ body{
   margin: 0;
   line-height: 28px;
   color: var(--secondary-color);
+}
+
+.section_title h2 {
+  color: var(--primary-color);
+}
+.work_process .work_icon, .work_process_step .work_icon {
+  background: var(--btn-bg);
+  height: 50px;
+  width: 50px;
+  border-radius: 16px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.work_process .work_icon i, .work_process_step .work_icon i {
+  color: #fff;
+  display: inline-block;
+  margin-top: 10px;
+  font-size: 20px;
+}
+
+.work_process h4,  .work_process_step h4{
+  font-size: 24px;
+  font-weight: 700;
+  color: var(--primary-color);
+}
+
+.work_process p, .work_process_step p{
+  line-height: 26px;
+  color: var(--secondary-color);
+}
+.work_process_step {
+  padding: 30px;
+  background: var(--body-bg);
+  box-shadow: var(--box-shadow);
+  border-radius: 4px;
+}
+
+section.business_model {
+  background-size: cover;
+  background-position: top center;
+  background-repeat: no-repeat;
+}
+.register_method {
+  padding: 30px;
+  background: var(--body-bg);
+  box-shadow: var(--box-shadow);
+  border-radius: 10px;
+}
+
+.register_method h3 {
+  font-size: 38px;
+  font-weight: 700;
+  color: var(--primary-color);
+  margin-bottom: 20px;
+}
+.register_method h3 span {
+  color: var(--btn-bg);
+}
+
+.register_method ul li {
+  margin: 10px 0;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.register_options select {
+  width: 30%;
+  border: 1px solid #fdfd;
+  padding: 8px 5px;
+  border-radius: 4px;
+  margin-right: 5px;
+}
+
+.register_options .get_started_button {
+  background: var(--btn-bg);
+  color: var(--body-bg);
+  padding: 6px 15px;
+  border: 0;
+  border-radius: 4px;
+}
+
+.register_options {
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
