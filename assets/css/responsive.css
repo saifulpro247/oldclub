@@ -18,6 +18,7 @@
 	.hero_bg {background-size: 0%;}
 	.service_types {grid-template-columns: repeat(3, 1fr);	gap: 30px;}
 	.client_testimonial {background-size: 110%;}
+	.single_agent_info {width: 48.333%;}
 
 }
 /* Tablet & mobile Layout: 768px. */
@@ -26,6 +27,10 @@
 	.client_testimonial {background-size: 130%;}
 	.hero_bg {background-size: 0%;}
 	.main_menu ul {display: none;}
+	.single-options {width: 100%;}
+	.order-desc.total {	position: relative;	bottom: 0px;width: 100%;}
+	.section-head {	margin-top: 20px;}
+	.single_agent_info {width: 48.333%;}
 
 }
 
@@ -44,6 +49,10 @@
 	.hero_bg {background-size: 0%;}
 	.mobile_menus {	right: 0;}
 	.pricing-selector {justify-content: center;}
+	.single_agent_info {width: 100%;}
+	
+	
+	
 	
  
 }
