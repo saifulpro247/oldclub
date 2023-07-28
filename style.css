@@ -1321,3 +1321,79 @@ section.business_model {
   padding-top: 20px;
   padding-bottom: 20px;
 }
+/* step 1 */
+.section-head h5 {
+	font-size: 18px;
+	font-weight: 700;
+	color: var(--primary-color);
+}
+.btn-full {
+	width: 100%;
+	padding: 8px;
+}
+.get_started, .order-summery, .business_information {
+  background-color: #fff;
+  box-shadow: var(--box-shadow);
+  padding: 30px;
+  border-radius: 4px;
+  margin-top: 30px;
+}
+.get_started h3 {
+  font-size: 25px;
+  font-weight: 700;
+  color: var(--primary-color);
+  margin-bottom: 20px;
+}
+.get_started p {
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+.order-summery .order-desc {
+  padding: 7px 0;
+  border-bottom: 1px solid #fdfd;
+  display: flex;
+  justify-content: space-between;
+}
+.order-summery .order-desc:last-child {
+  border: none;
+}
+.business_information input, .business_information select {
+	padding: 10px;
+	border-radius: 0;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+.order-summery {
+	height: calc(100% - 120px);
+	position: relative;
+}
+.order-desc.total {
+	position: absolute;
+	bottom: 20px;
+	width: 85%;
+}
+.single-options {
+	width: 48%;
+	display: inline-block;
+	margin-right: 10px;
+}
+.single_agent_info {
+	width: 32.333%;
+	display: inline-block;
+	border: 1px solid #fdfd;
+	padding: 15px;
+	margin-right: 5px;
+	margin-bottom: 30px;
+	border-radius: 10px;
+  text-align: center;
+}
+
+.single_agent_info h5 {
+  font-size: 18px;
+  color: var(--primary-color);
+}
+.single_agent_info p {
+  font-size: 14px;
+  line-height: 24px;
+}
