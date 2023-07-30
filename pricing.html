@@ -24,7 +24,9 @@
 		<div class="container">
 			<div class="row d-flex align-items-center">
 				<div class="col-md-3 col-sm-6 col-6">
-					<div class="site_logo"><a href="index.html"><img src="assets/img/LOGO.png" alt=""><h4>OLD CLUB MAN</h4></a></div>
+					<div class="site_logo"><a href="index.html"><img src="assets/img/LOGO.png" alt="">
+							<h4>OLD CLUB MAN</h4>
+						</a></div>
 				</div>
 				<div class="col-md-9 col-sm-6 col-6">
 					<div class="main_menu">
@@ -38,16 +40,18 @@
 									<li><a href="service.html">Services</a></li>
 									<li><a href="faq.html">FAQs</a></li>
 									<li><a href="contact.html">Contact Us</a></li>
+									<li><a href="our-mailbox.html">Mailbox</a></li>
 									<li><a href="security.html">Security</a></li>
 								</ul>
 							</li>
-							
-							<li class="login-btn profile-show"><a href="#" data-bs-toggle="modal" data-bs-target="#login-modal">sign in</a></li>
+
+							<li class="login-btn profile-show"><a href="#" data-bs-toggle="modal"
+									data-bs-target="#login-modal">sign in</a></li>
 						</ul>
 						</ul>
 						<div class="expanded_menu sm">
 							<button class="menu_humberger" id="myButton"><i class="bi bi-list"></i></button>
-							
+
 						</div>
 					</div>
 				</div>
@@ -63,11 +67,12 @@
 							<li><a href="service.html">Services</a></li>
 							<li><a href="faq.html">FAQs</a></li>
 							<li><a href="contact.html">Contact Us</a></li>
+							<li><a href="our-mailbox.html">Mailbox</a></li>
 							<li><a href="security.html">Security</a></li>
 						</ul>
 					</li>
 					<li><a href="#" data-bs-toggle="modal" data-bs-target="#login-modal">sign in</a></li>
-					</ul>
+				</ul>
 			</div>
 		</div>
 	</header>
@@ -835,43 +840,10 @@
 	<script src="assets/js/Jquery-3.7.0.js"></script>
 	<script src="assets/js/owl.carousel.min.js"></script>
 	<script src="assets/js/bootstrap.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/SlickNav/1.0.10/jquery.slicknav.min.js"></script>
-
+	<script src="assets/js/aos.js"></script>
 	<script src="assets/js/main.js"></script>
 	<script>
-		     // JavaScript code for the tab plugin
-			 document.addEventListener("DOMContentLoaded", function () {
-          const tabButtons = document.querySelectorAll(".service_box");
-          const tabContents = document.querySelectorAll(".tab_content");
-
-          function showTab(tab) {
-            tabContents.forEach(function (content) {
-              if (content.dataset.tab === tab) {
-                content.classList.add("active");
-              } else {
-                content.classList.remove("active");
-              }
-            });
-
-            tabButtons.forEach(function (button) {
-              if (button.dataset.tab === tab) {
-                button.classList.add("active");
-              } else {
-                button.classList.remove("active");
-              }
-            });
-          }
-
-          tabButtons.forEach(function (button) {
-            button.addEventListener("click", function () {
-              const tab = this.dataset.tab;
-              showTab(tab);
-            });
-          });
-
-          // Show the first tab by default
-          showTab(tabButtons[0].dataset.tab);
-        });
+		AOS.init();
 	</script>
 
 </body>
