@@ -10,8 +10,7 @@
 	<link rel="stylesheet" href="assets/css/bootstrap.min.css">
 	<link rel="stylesheet" href="assets/css/owl.carousel.min.css">
 	<link rel="stylesheet" href="assets/css/owl.theme.default.css">
-	<link rel="https://cdnjs.cloudflare.com/ajax/libs/SlickNav/1.0.10/slicknav.min.css" />
-
+	<link rel="stylesheet" href="assets/css/aos.css">
 	<link rel="stylesheet" href="style.css">
 	<link rel="stylesheet" href="assets/css/responsive.css">
 	<script src="assets/js/modernizr-3.12.0.min.js"></script>
@@ -32,7 +31,7 @@
 							<li><a href="how-works.html">How it works</a></li>
 							<li><a href="feature.html">Features</a></li>
 							<li><a href="pricing.html">Pricing</a></li>
-							<li><a href="#">Resources</a>
+							<li><a href="#">Resources +</a>
 								<ul class="sub-menu">
 									<li><a href="service.html">Services</a></li>
 									<li><a href="faq.html">FAQs</a></li>
@@ -41,7 +40,7 @@
 								</ul>
 							</li>
 							
-							<li><a href="#" data-bs-toggle="modal" data-bs-target="#login-modal">sign in</a></li>
+							<li class="login-btn profile-show"><a href="#" data-bs-toggle="modal" data-bs-target="#login-modal">sign in</a></li>
 						</ul>
 						</ul>
 						<div class="expanded_menu sm">
@@ -57,7 +56,7 @@
 					<li><a href="how-works.html">How it works</a></li>
 					<li><a href="feature.html">Features</a></li>
 					<li><a href="pricing.html">Pricing</a></li>
-					<li><a href="#">Resources</a>
+					<li class="has-menu"><a href="#">Resources +</a>
 						<ul class="sub-menu">
 							<li><a href="service.html">Services</a></li>
 							<li><a href="faq.html">FAQs</a></li>
@@ -65,10 +64,9 @@
 							<li><a href="security.html">Security</a></li>
 						</ul>
 					</li>
-					<li><a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal">sign in</a></li>
+					<li><a href="#" data-bs-toggle="modal" data-bs-target="#login-modal">sign in</a></li>
 					</ul>
 			</div>
-			
 		</div>
 	</header>
 	<!-- hero area -->
@@ -96,7 +94,7 @@
 	<section class="our_services section_padding">
 		<div class="container">
 			<div class="row">
-				<div class="col-lg-4 mb-4">
+				<div data-aos="fade-left" data-aos-duration="1500Year" class="col-lg-4 mb-4">
 					<div class="service_box p-5">
 						<a class="single_service_box" href="mail-box.html">
 							<img src="assets/img/mailbox.png" alt="">
@@ -105,7 +103,7 @@
 						</a>
 					</div>
 				</div>
-				<div class="col-lg-4 mb-4">
+				<div data-aos="fade" data-aos-duration="1500Year" class="col-lg-4 mb-4">
 					<div class="service_box p-5">
 						<a class="single_service_box" href="register-business.html">
 							<img src="assets/img/registered.png" alt="">
@@ -114,7 +112,7 @@
 						</a>
 					</div>
 				</div>
-				<div class="col-lg-4 mb-4">
+				<div data-aos="fade-right" data-aos-duration="1500Year" class="col-lg-4 mb-4">
 					<div class="service_box p-5">
 						<a class="single_service_box" href="bulk-sms.html">
 							<img src="assets/img/chatting.png" alt="">
@@ -123,7 +121,7 @@
 						</a>
 					</div>
 				</div>
-				<div class="col-lg-4 mb-4">
+				<div data-aos="fade-left" data-aos-duration="1500" class="col-lg-4 mb-4">
 					<div class="service_box p-5">
 						<a class="single_service_box" href="#">
 							<img src="assets/img/payment-method.png" alt="">
@@ -132,8 +130,8 @@
 						</a>
 					</div>
 				</div>
-				<div class="col-lg-4 mb-4">
-					<div class="service_box">
+				<div data-aos="fade-right" data-aos-duration="1500" class="col-lg-4 mb-4">
+					<div class="service_box p-5">
 						<a class="single_service_box" href="#">
 							<img src="assets/img/package.png" alt="">
 							<a href="#">Package Service</a>
@@ -249,7 +247,7 @@
 												<h2>Starter</h2>
 											</div>
 											<p>Basic Usages</p>
-											<h3>$150.00 <span>/month</span></h3>
+											<h3>$150.00 <span>/Year</span></h3>
 										</div>
 										<div class="pricing-card-body">
 											<ul class="pricing-card-list">
@@ -272,7 +270,7 @@
 												<h2>Standard</h2>
 											</div>
 											<p>Standard</p>
-											<h3>$222.00 <span>/month</span></h3>
+											<h3>$222.00 <span>/Year</span></h3>
 										</div>
 										<div class="pricing-card-body">
 											<ul class="pricing-card-list">
@@ -295,7 +293,7 @@
 												<h2>Premium</h2>
 											</div>
 											<p>Full Package</p>
-											<h3>$306.00 <span>/month</span></h3>
+											<h3>$306.00 <span>/Year</span></h3>
 										</div>
 										<div class="pricing-card-body">
 											<ul class="pricing-card-list">
@@ -455,13 +453,15 @@
             </div>
         </div>
     </div>
-	<!-- modal end -->
+	<!-- modal end -->	
 	<!-- all javascript here -->
 	<script src="assets/js/Jquery-3.7.0.js"></script>
 	<script src="assets/js/owl.carousel.min.js"></script>
 	<script src="assets/js/bootstrap.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/SlickNav/1.0.10/jquery.slicknav.min.js"></script>
-
+	<script src="assets/js/aos.js"></script>
 	<script src="assets/js/main.js"></script>
+	<script>
+		AOS.init();
+	</script>
 </body>
 </html>

@@ -19,6 +19,7 @@
 	.service_types {grid-template-columns: repeat(3, 1fr);	gap: 30px;}
 	.client_testimonial {background-size: 110%;}
 	.single_agent_info {width: 48.333%;}
+	
 
 }
 /* Tablet & mobile Layout: 768px. */
@@ -31,6 +32,7 @@
 	.order-desc.total {	position: relative;	bottom: 0px;width: 100%;}
 	.section-head {	margin-top: 20px;}
 	.single_agent_info {width: 48.333%;}
+	.expanded_menu{display: block;}
 
 }
 

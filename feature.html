@@ -10,7 +10,8 @@
 	<link rel="stylesheet" href="assets/css/bootstrap.min.css">
 	<link rel="stylesheet" href="assets/css/owl.carousel.min.css">
 	<link rel="stylesheet" href="assets/css/owl.theme.default.css">
-	<link rel="https://cdnjs.cloudflare.com/ajax/libs/SlickNav/1.0.10/slicknav.min.css" />
+	<link rel="stylesheet" href="assets/css/aos.css">
+
 
 	<link rel="stylesheet" href="style.css">
 	<link rel="stylesheet" href="assets/css/responsive.css">
@@ -32,7 +33,7 @@
 							<li><a href="how-works.html">How it works</a></li>
 							<li><a href="feature.html">Features</a></li>
 							<li><a href="pricing.html">Pricing</a></li>
-							<li><a href="#">Resources</a>
+							<li><a href="#">Resources +</a>
 								<ul class="sub-menu">
 									<li><a href="service.html">Services</a></li>
 									<li><a href="faq.html">FAQs</a></li>
@@ -41,7 +42,7 @@
 								</ul>
 							</li>
 							
-							<li><a href="#" data-bs-toggle="modal" data-bs-target="#login-modal">sign in</a></li>
+							<li class="login-btn profile-show"><a href="#" data-bs-toggle="modal" data-bs-target="#login-modal">sign in</a></li>
 						</ul>
 						</ul>
 						<div class="expanded_menu sm">
@@ -57,7 +58,7 @@
 					<li><a href="how-works.html">How it works</a></li>
 					<li><a href="feature.html">Features</a></li>
 					<li><a href="pricing.html">Pricing</a></li>
-					<li><a href="#">Resources</a>
+					<li class="has-menu"><a href="#">Resources +</a>
 						<ul class="sub-menu">
 							<li><a href="service.html">Services</a></li>
 							<li><a href="faq.html">FAQs</a></li>
@@ -65,10 +66,9 @@
 							<li><a href="security.html">Security</a></li>
 						</ul>
 					</li>
-					<li><a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal">sign in</a></li>
+					<li><a href="#" data-bs-toggle="modal" data-bs-target="#login-modal">sign in</a></li>
 					</ul>
 			</div>
-			
 		</div>
 	</header>
 	<!-- hero area -->
@@ -97,7 +97,7 @@
 	<section class="features_area section_padding">
 		<div class="container">
 			<!-- single feature -->
-			<div class="row mb-5 border-bottom pb-5">
+			<div data-aos="fade-left" class="row mb-5 border-bottom pb-5">
 				<div class="col-md-6 text-center">
 					<div class="feature_single_img">
 						<img class="lazy" src="https://www.postscanmail.com/wp-content/uploads/2020/07/features-vmb.jpg"  alt="Features Vmb">
@@ -105,9 +105,6 @@
 				</div>
 				<div class="col-md-6 d-flex align-items-center">
 					<div class="feature_text">
-						<div class="feature_title">
-							<img src="assets/img/Mail-icon.png" alt="">
-						</div>
 						<div class="feature_description">
 							<h3>Online Mail Management</h3>
 							We give you complete control over your mail deliveries online. You can manage your mail remotely from any location with complete security. Review the image and decide how you want the item handled.
@@ -117,7 +114,7 @@
 			</div>
 			<!-- single feature end -->
 			<!-- single feature -->
-			<div class="row mb-5 border-bottom pb-5 rtl">
+			<div data-aos="fade-right" class="row mb-5 border-bottom pb-5 rtl">
 				<div class="col-md-6 text-center">
 					<div class="feature_single_img">
 						<img class="lazy" src="https://www.postscanmail.com/wp-content/uploads/2020/07/features-vmb.jpg"  alt="Features Vmb">
@@ -125,10 +122,6 @@
 				</div>
 				<div class="col-md-6 d-flex align-items-center">
 					<div class="feature_text">
-						<div class="feature_title">
-							<img src="assets/img/Mail-icon.png" alt="">
-							
-						</div>
 						<div class="feature_description">
 							<h3>Online Mail Management</h3>
 							We give you complete control over your mail deliveries online. You can manage your mail remotely from any location with complete security. Review the image and decide how you want the item handled.
@@ -138,7 +131,7 @@
 			</div>
 			<!-- single feature end -->
 			<!-- single feature -->
-			<div class="row mb-5 ">
+			<div data-aos="fade-left" class="row mb-5 ">
 				<div class="col-md-6 text-center">
 					<div class="feature_single_img">
 						<img class="lazy" src="https://www.postscanmail.com/wp-content/uploads/2020/07/features-vmb.jpg"  alt="Features Vmb">
@@ -146,10 +139,6 @@
 				</div>
 				<div class="col-md-6 d-flex align-items-center">
 					<div class="feature_text">
-						<div class="feature_title">
-							<img src="assets/img/Mail-icon.png" alt="">
-							
-						</div>
 						<div class="feature_description">
 							<h3>Online Mail Management</h3>
 							We give you complete control over your mail deliveries online. You can manage your mail remotely from any location with complete security. Review the image and decide how you want the item handled.
@@ -302,8 +291,10 @@
 	<script src="assets/js/Jquery-3.7.0.js"></script>
 	<script src="assets/js/owl.carousel.min.js"></script>
 	<script src="assets/js/bootstrap.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/SlickNav/1.0.10/jquery.slicknav.min.js"></script>
-
+	<script src="assets/js/aos.js"></script>
 	<script src="assets/js/main.js"></script>
+	<script>
+		AOS.init();
+	</script>
 </body>
 </html>
