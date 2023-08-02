@@ -172,20 +172,23 @@ body{
     position: sticky;
     background: #fff;
     padding: 10px 0;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    z-index: 2;
 }
 /* mobile menus */
 .mobile_menus {
-    width: 300px;
+    width: 95%;
     background: var(--body-bg);
-    padding: 15px 20px;
+    padding: 25px 20px;
     position: absolute;
-    right: 20%;
-    left: auto;
+    right: 0;
+    left: 0;
     fill: #FFF;
     filter: drop-shadow(0px 0px 10px rgba(86, 55, 160, 0.25));
     top: 100%;
-	display: none;
-	visibility: hidden;
+    display: none;
+/*    visibility: hidden;*/
+    margin: 0 auto;
 }
 .mobile_menus.d-block {
     visibility: visible;
@@ -206,8 +209,6 @@ body{
 .mobile_menus ul li ul.sub-menu {
     padding-left: 30px;
     display: none;
-    opacity: 0;
-    transition: opacity 0.3s ease;
 }
 .mobile_menus ul li .sub-menu.open {
   display: block;
@@ -484,6 +485,9 @@ body{
     color: var(--body-bg);
 }
 
+.single_widget p {
+    margin-top: 20px;
+}
 .single_widget {
     color: var(--body-bg);
     position: relative;
