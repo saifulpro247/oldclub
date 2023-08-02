@@ -74,6 +74,10 @@
 	  .mailbox_tab button {
 		padding: 0.3rem !important;
 	}
+<<<<<<< HEAD
+=======
+	   
+>>>>>>> 92c0492997a6dda184d271f9e251f849334083e6
 }
 /* Wide Mobile Layout: 480px. */
 @media only screen and (min-width: 480px) and (max-width: 767px) { 
