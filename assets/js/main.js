@@ -2,6 +2,16 @@
   "use strict";
   $(document).ready(function () {
 
+  // Sticky Menu
+    $(window).scroll(function(){
+      var window_top = $(window).scrollTop() + 1; 
+      if (window_top > 200) {
+        $('.header_area').addClass('sticky_menu animated fadeInDown');
+      } else {
+        $('.header_area').removeClass('sticky_menu animated fadeInDown');
+      }
+    }); 
+
     // mobile menu
     $(".menu_humberger").on("click", function () {
       $(".mobile_menus").toggleClass("d-block");

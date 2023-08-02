@@ -70,7 +70,9 @@
 	.export-search a, .export-search input {
 		display: none;
 	  }
-	   
+	  .mailbox_tab button {
+		padding: 0.3rem !important;
+	}
 }
 /* Wide Mobile Layout: 480px. */
 @media only screen and (min-width: 480px) and (max-width: 767px) { 

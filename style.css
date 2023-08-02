@@ -121,7 +121,26 @@ body{
     font-weight: 500;
     letter-spacing: 1px;
     transition: all .3s;
+    position: relative;
 }
+.main_menu ul li:not(:last-child):after  {
+    border-bottom: 2px solid currentColor;
+    position: absolute;
+    content: '';
+    bottom: -6px;
+    width: 100%;
+    height: 1px;
+    left: 0;
+    opacity: 0;
+    transition: .3s;
+}
+.main_menu ul li:first-child:after{
+    border-bottom: 0;
+}
+.main_menu ul li:hover:not(:last-child):after{
+    opacity: 1;
+}
+
 .main_menu ul li:hover a {
     color: #000;
 }
@@ -148,6 +167,11 @@ body{
 }
 .main_menu .expanded_menu button:hover i{
 	color: var(--body-bg);
+}
+.sticky_menu {
+    position: sticky;
+    background: #fff;
+    padding: 10px 0;
 }
 /* mobile menus */
 .mobile_menus {
@@ -211,8 +235,8 @@ body{
 	opacity: 0;
 	transition: all .3s;
 }
-.main_menu ul li ul.sub-menu li {
-
+.main_menu ul li ul.sub-menu li:not(:last-child):after {
+    border-bottom: 0;
 }
 .main_menu ul li ul.sub-menu li a {
     border-bottom: 1px solid #dbdbdb;
