@@ -1,53 +1,53 @@
 @font-face {
-    font-family: 'Poppins';
-    src: url('Poppins-Bold.eot');
-    src: url('Poppins-Bold.eot?#iefix') format('embedded-opentype'),
-        url('Poppins-Bold.woff2') format('woff2'),
-        url('Poppins-Bold.woff') format('woff');
-    font-weight: bold;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Poppins';
-    src: url('Poppins-Light.eot');
-    src: url('Poppins-Light.eot?#iefix') format('embedded-opentype'),
-        url('Poppins-Light.woff2') format('woff2'),
-        url('Poppins-Light.woff') format('woff');
+    font-family: 'DM Sans';
+    src: url('DMSans-Light.eot');
+    src: url('DMSans-Light.eot?#iefix') format('embedded-opentype'),
+        url('DMSans-Light.woff2') format('woff2'),
+        url('DMSans-Light.woff') format('woff');
     font-weight: 300;
     font-style: normal;
     font-display: swap;
 }
 
 @font-face {
-    font-family: 'Poppins';
-    src: url('Poppins-Medium.eot');
-    src: url('Poppins-Medium.eot?#iefix') format('embedded-opentype'),
-        url('Poppins-Medium.woff2') format('woff2'),
-        url('Poppins-Medium.woff') format('woff');
+    font-family: 'DM Sans';
+    src: url('DMSans-Bold.eot');
+    src: url('DMSans-Bold.eot?#iefix') format('embedded-opentype'),
+        url('DMSans-Bold.woff2') format('woff2'),
+        url('DMSans-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'DM Sans';
+    src: url('DMSans-Medium.eot');
+    src: url('DMSans-Medium.eot?#iefix') format('embedded-opentype'),
+        url('DMSans-Medium.woff2') format('woff2'),
+        url('DMSans-Medium.woff') format('woff');
     font-weight: 500;
     font-style: normal;
     font-display: swap;
 }
 
 @font-face {
-    font-family: 'Poppins';
-    src: url('Poppins-Regular.eot');
-    src: url('Poppins-Regular.eot?#iefix') format('embedded-opentype'),
-        url('Poppins-Regular.woff2') format('woff2'),
-        url('Poppins-Regular.woff') format('woff');
+    font-family: 'DM Sans';
+    src: url('DMSans-Regular.eot');
+    src: url('DMSans-Regular.eot?#iefix') format('embedded-opentype'),
+        url('DMSans-Regular.woff2') format('woff2'),
+        url('DMSans-Regular.woff') format('woff');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
 }
 
 @font-face {
-    font-family: 'Poppins';
-    src: url('Poppins-SemiBold.eot');
-    src: url('Poppins-SemiBold.eot?#iefix') format('embedded-opentype'),
-        url('Poppins-SemiBold.woff2') format('woff2'),
-        url('Poppins-SemiBold.woff') format('woff');
+    font-family: 'DM Sans';
+    src: url('DMSans-SemiBold.eot');
+    src: url('DMSans-SemiBold.eot?#iefix') format('embedded-opentype'),
+        url('DMSans-SemiBold.woff2') format('woff2'),
+        url('DMSans-SemiBold.woff') format('woff');
     font-weight: 600;
     font-style: normal;
     font-display: swap;
